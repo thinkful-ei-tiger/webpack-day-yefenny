@@ -1,10 +1,10 @@
-import item from './item.js';
+import item from './item';
 
 const items = [];
 let hideCheckeditems = false;
 
 const findById = function (id) {
-  return this.items.find(currentItem => currentItem.id === id);
+  return this.items.find((currentItem) => currentItem.id === id);
 };
 
 const addItem = function (name) {
@@ -32,7 +32,7 @@ const findAndUpdateName = function (id, name) {
 };
 
 const findAndDelete = function (id) {
-  this.items = this.items.filter(currentItem => currentItem.id !== id);
+  this.items = this.items.filter((currentItem) => currentItem.id !== id);
 };
 
 const toggleCheckedFilter = function () {
